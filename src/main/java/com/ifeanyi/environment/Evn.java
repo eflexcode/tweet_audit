@@ -29,7 +29,7 @@ public class Evn {
 
     public EvnData initEvn() {
 
-        String evnPath = "/home/ifeanyi/IdeaProjects/Tweet-audit/src/main/resources/evn.json";
+        String evnPath = "/home/ifeanyi/IdeaProjects/tweet_audit/src/main/resources/evn.json";
 
         System.out.println("Loading evn.json from "+evnPath);
 
@@ -43,7 +43,6 @@ public class Evn {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
 
     }
 

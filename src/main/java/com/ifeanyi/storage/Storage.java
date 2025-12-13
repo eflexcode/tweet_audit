@@ -36,7 +36,7 @@ public class Storage {
 
     }
 
-    private String configPath = "/home/ifeanyi/IdeaProjects/Tweet-audit/src/main/resources/config.json";
+    private String configPath = "/home/ifeanyi/IdeaProjects/tweet_audit/src/main/resources/config.json";
     String[] csvHeaders = {"tweet_url", "deleted"};
 
     public void upDateStarFrom(int newStartFromIndex) {
@@ -118,7 +118,7 @@ public class Storage {
 
         int maxload = startFromIndex + loadAmount;
 
-        String filePath = "/home/ifeanyi/IdeaProjects/Tweet-audit/src/main/resources/tweets.json";
+        String filePath = "/home/ifeanyi/IdeaProjects/tweet_audit/src/main/resources/tweets.json";
         System.out.println("Loading tweets from " + filePath + " from " + startFromIndex + " to " + maxload);
 
         File file = new File(filePath);
@@ -148,7 +148,7 @@ public class Storage {
 
     public boolean writeTweetResultCsv(String url, boolean deleted) {
 
-        String filePath = "/home/ifeanyi/IdeaProjects/Tweet-audit/src/main/resources/result.csv";
+        String filePath = "/home/ifeanyi/IdeaProjects/tweet_audit/src/main/resources/result.csv";
 
         File file = new File(filePath);
 
@@ -195,7 +195,7 @@ public class Storage {
 
     public boolean writeTweetResult(Result result) {
 
-        String filePath = "/home/ifeanyi/IdeaProjects/Tweet-audit/src/main/resources/result.json";
+        String filePath = "/home/ifeanyi/IdeaProjects/tweet_audit/src/main/resources/result.json";
 
         File file = new File(filePath);
         Gson gson = new Gson();
